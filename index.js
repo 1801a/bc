@@ -83,7 +83,7 @@ m.sendMessage(args)
   
   
   client.on("message", message => {
-    if (message.content === "b!help") {
+    if (message.content === "?help") {
      const embed = new Discord.RichEmbed() 
          .setColor("#00FF00")
          .setThumbnail(message.author.avatarURL)
@@ -99,25 +99,9 @@ m.sendMessage(args)
    });
 
 
-   client.on("message", message => {
-    if (message.content === "b!invite") {
-     const embed = new Discord.RichEmbed()
-         .setColor("RANDOM")
-         .addField('Broadcast', `https://discordapp.com/api/oauth2/authorize?client_id=489960386339274771&permissions=8&scope=bot`)
-     message.author.send({embed});
-   
-    }
-   });
 
 
 
 
-
-
-client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag} !`);
-          client.user.setActivity("b!help | b!invite",{type: 'WATCHING'});
-  
-  });
 
 client.login(process.env.TOKEN);
