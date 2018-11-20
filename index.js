@@ -89,9 +89,9 @@ m.sendMessage(args)
          .setThumbnail(message.author.avatarURL)
          .setDescription(`**Help | هيلب
 
-       **bc** | لأرسال برود كاست للكل
+       **?bc** | لأرسال برود كاست للكل
 
-       **obc**  |  لأرسال برود كاست للأونلاين
+       **?obc**  |  لأرسال برود كاست للأونلاين
 ** `)
    message.author.sendEmbed(embed)
    
